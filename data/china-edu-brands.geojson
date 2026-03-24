@@ -1,0 +1,433 @@
+{
+  "type": "FeatureCollection",
+  "metadata": {
+    "title": "中国在线教育品牌分布",
+    "description": "包含新东方、学而思、猿辅导、高途、作业帮、火花思维等中国主要在线教育品牌的地理分布数据",
+    "source": "WorldMonitor China Education Extension",
+    "updated": "2024-03-24"
+  },
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4074, 39.9042]
+      },
+      "properties": {
+        "id": "xdf",
+        "name": "新东方",
+        "nameEn": "New Oriental",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 1993,
+        "valuation": "NASDAQ: EDU",
+        "users": "超5000万学员",
+        "color": "#FF6B6B"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4228, 39.9149]
+      },
+      "properties": {
+        "id": "zsxdf",
+        "name": "北京新东方学校",
+        "nameEn": "Beijing New Oriental School",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 1993
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.4737, 31.2304]
+      },
+      "properties": {
+        "id": "shxdf",
+        "name": "上海新东方学校",
+        "nameEn": "Shanghai New Oriental School",
+        "type": "k12",
+        "city": "上海",
+        "province": "上海市",
+        "country": "China",
+        "founded": 1999
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [113.2644, 23.1291]
+      },
+      "properties": {
+        "id": "gexdf",
+        "name": "广州新东方学校",
+        "nameEn": "Guangzhou New Oriental School",
+        "type": "k12",
+        "city": "广州",
+        "province": "广东省",
+        "country": "China",
+        "founded": 2000
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.0579, 22.5431]
+      },
+      "properties": {
+        "id": "sixdf",
+        "name": "深圳新东方学校",
+        "nameEn": "Shenzhen New Oriental School",
+        "type": "k12",
+        "city": "深圳",
+        "province": "广东省",
+        "country": "China",
+        "founded": 2001
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.1551, 30.2741]
+      },
+      "properties": {
+        "id": "zjsxdf",
+        "name": "浙江新东方学校",
+        "nameEn": "Zhejiang New Oriental School",
+        "type": "k12",
+        "city": "杭州",
+        "province": "浙江省",
+        "country": "China",
+        "founded": 2002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [104.0668, 30.5728]
+      },
+      "properties": {
+        "id": "sxxdf",
+        "name": "四川新东方学校",
+        "nameEn": "Sichuan New Oriental School",
+        "type": "k12",
+        "city": "成都",
+        "province": "四川省",
+        "country": "China",
+        "founded": 2003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.3055, 30.5928]
+      },
+      "properties": {
+        "id": "xjxdf",
+        "name": "武汉新东方学校",
+        "nameEn": "Wuhan New Oriental School",
+        "type": "k12",
+        "city": "武汉",
+        "province": "湖北省",
+        "country": "China",
+        "founded": 2002
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4280, 39.9149]
+      },
+      "properties": {
+        "id": "xes",
+        "name": "学而思",
+        "nameEn": "TAL Education",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2003,
+        "valuation": "NASDAQ: TAL",
+        "users": "超4000万学员"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4760, 39.9889]
+      },
+      "properties": {
+        "id": "bjxes",
+        "name": "北京学而思",
+        "nameEn": "Beijing TAL Education",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2003
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.4737, 31.2304]
+      },
+      "properties": {
+        "id": "shxes",
+        "name": "上海学而思",
+        "nameEn": "Shanghai TAL Education",
+        "type": "k12",
+        "city": "上海",
+        "province": "上海市",
+        "country": "China",
+        "founded": 2007
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4790, 39.9842]
+      },
+      "properties": {
+        "id": "yfd",
+        "name": "猿辅导",
+        "nameEn": "Yuanfudao",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2012,
+        "valuation": "超30亿美元",
+        "users": "超4亿用户"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4550, 39.9649]
+      },
+      "properties": {
+        "id": "gt",
+        "name": "高途",
+        "nameEn": "Gaotu Techedu",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2014,
+        "valuation": "NYSE: GOTU"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4690, 39.9742]
+      },
+      "properties": {
+        "id": "zyb",
+        "name": "作业帮",
+        "nameEn": "Zuoyebang",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2014,
+        "valuation": "超17亿美元",
+        "users": "超8亿用户"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4600, 39.9542]
+      },
+      "properties": {
+        "id": "hhx",
+        "name": "火花思维",
+        "nameEn": "Spark Education",
+        "type": "STEAM",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2017,
+        "valuation": "超15亿美元"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4500, 39.9442]
+      },
+      "properties": {
+        "id": "dsx",
+        "name": "大鹏教育",
+        "nameEn": "Dapeng Education",
+        "type": "职业技能",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2015
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [120.1551, 30.2741]
+      },
+      "properties": {
+        "id": "yzx",
+        "name": "有赞教育",
+        "nameEn": "Youzan Education",
+        "type": "平台",
+        "city": "杭州",
+        "province": "浙江省",
+        "country": "China",
+        "founded": 2018
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [114.0579, 22.5431]
+      },
+      "properties": {
+        "id": "bx",
+        "name": "编程猫",
+        "nameEn": "Coding Cat",
+        "type": "STEAM",
+        "city": "深圳",
+        "province": "广东省",
+        "country": "China",
+        "founded": 2015,
+        "valuation": "超20亿人民币"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.4737, 31.2304]
+      },
+      "properties": {
+        "id": "lw",
+        "name": "流利说",
+        "nameEn": "LAIX",
+        "type": "语言",
+        "city": "上海",
+        "province": "上海市",
+        "country": "China",
+        "founded": 2012,
+        "valuation": "NYSE: LAIX"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.4600, 31.2004]
+      },
+      "properties": {
+        "id": "xz",
+        "name": "小站教育",
+        "nameEn": "Xiaozhan Education",
+        "type": "考试培训",
+        "city": "上海",
+        "province": "上海市",
+        "country": "China",
+        "founded": 2011
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4400, 39.9342]
+      },
+      "properties": {
+        "id": "mf",
+        "name": "魔法校",
+        "nameEn": "Magic School",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2018
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [121.4000, 31.1804]
+      },
+      "properties": {
+        "id": "zy",
+        "name": "掌门1对1",
+        "nameEn": "Zhangmen Mentor",
+        "type": "k12",
+        "city": "上海",
+        "province": "上海市",
+        "country": "China",
+        "founded": 2005,
+        "valuation": "超10亿美元"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4300, 39.9242]
+      },
+      "properties": {
+        "id": "ai",
+        "name": "AI双师",
+        "nameEn": "AI Double Teacher",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2019
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [116.4200, 39.9142]
+      },
+      "properties": {
+        "id": "hwh",
+        "name": "华罗庚网校",
+        "nameEn": "Hua Luogeng Online School",
+        "type": "k12",
+        "city": "北京",
+        "province": "北京市",
+        "country": "China",
+        "founded": 2020
+      }
+    }
+  ]
+}

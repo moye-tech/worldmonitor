@@ -138,3 +138,18 @@ export {
 // COMMODITY_MINERS: 30+ mining company HQs — not yet rendered on map.
 // Uncomment when a miners layer is added to DeckGLMap.ts.
 // export { COMMODITY_MINERS, type CommodityMiner } from './commodity-miners';
+
+// World Plus variant - China Education Live Streaming (extended from full variant)
+export {
+  CHINA_EDU_BRANDS,
+  CHINA_LIVE_PLATFORMS,
+  educationLayers,
+  getEducationBrands,
+  getLivePlatforms,
+  getBrandById,
+  getBrandsByType,
+  getEducationLayers,
+  type EducationBrand,
+  type LiveStreamingPlatform,
+  type EducationLayer,
+} from './education';
