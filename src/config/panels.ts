@@ -835,6 +835,32 @@ const COMMODITY_MOBILE_MAP_LAYERS: MapLayers = {
 };
 
 // ============================================
+// WORLD-PLUS VARIANT (China Education)
+// ============================================
+
+const WORLD_PLUS_PANELS: Record<string, PanelConfig> = {
+  // Education panels (new)
+  'china-edu': { name: 'China Education Brands', enabled: true, priority: 1 },
+  'china-live': { name: 'Live Streaming Signals', enabled: true, priority: 1 },
+  // Base panels from full variant
+  ...Object.fromEntries(Object.entries(FULL_PANELS).map(([k, v]) => [k, { ...v }])),
+};
+
+const WORLD_PLUS_MAP_LAYERS: MapLayers = {
+  ...FULL_MAP_LAYERS,
+  // Education layers enabled by default
+  chinaEduBrands: true,
+  chinaLiveStreaming: true,
+};
+
+const WORLD_PLUS_MOBILE_MAP_LAYERS: MapLayers = {
+  ...FULL_MOBILE_MAP_LAYERS,
+  // Education layers
+  chinaEduBrands: false,
+  chinaLiveStreaming: true,
+};
+
+// ============================================
 // UNIFIED PANEL REGISTRY
 // ============================================
 
@@ -844,6 +870,7 @@ export const ALL_PANELS: Record<string, PanelConfig> = {
   ...COMMODITY_PANELS,
   ...TECH_PANELS,
   ...FINANCE_PANELS,
+  ...WORLD_PLUS_PANELS,
   ...FULL_PANELS,
 };
 
@@ -854,6 +881,7 @@ export const VARIANT_DEFAULTS: Record<string, string[]> = {
   finance:   Object.keys(FINANCE_PANELS),
   commodity: Object.keys(COMMODITY_PANELS),
   happy:     Object.keys(HAPPY_PANELS),
+  'world-plus': Object.keys(WORLD_PLUS_PANELS),
 };
 
 /**
@@ -917,25 +945,29 @@ export const DEFAULT_PANELS: Record<string, PanelConfig> = Object.fromEntries(
   )
 );
 
-export const DEFAULT_MAP_LAYERS = SITE_VARIANT === 'happy' 
-  ? HAPPY_MAP_LAYERS 
-  : SITE_VARIANT === 'tech' 
-    ? TECH_MAP_LAYERS 
-    : SITE_VARIANT === 'finance' 
-      ? FINANCE_MAP_LAYERS 
+export const DEFAULT_MAP_LAYERS = SITE_VARIANT === 'happy'
+  ? HAPPY_MAP_LAYERS
+  : SITE_VARIANT === 'tech'
+    ? TECH_MAP_LAYERS
+    : SITE_VARIANT === 'finance'
+      ? FINANCE_MAP_LAYERS
       : SITE_VARIANT === 'commodity'
         ? COMMODITY_MAP_LAYERS
-        : FULL_MAP_LAYERS;
+        : SITE_VARIANT === 'world-plus'
+          ? WORLD_PLUS_MAP_LAYERS
+          : FULL_MAP_LAYERS;
 
-export const MOBILE_DEFAULT_MAP_LAYERS = SITE_VARIANT === 'happy' 
-  ? HAPPY_MOBILE_MAP_LAYERS 
-  : SITE_VARIANT === 'tech' 
-    ? TECH_MOBILE_MAP_LAYERS 
-    : SITE_VARIANT === 'finance' 
-      ? FINANCE_MOBILE_MAP_LAYERS 
+export const MOBILE_DEFAULT_MAP_LAYERS = SITE_VARIANT === 'happy'
+  ? HAPPY_MOBILE_MAP_LAYERS
+  : SITE_VARIANT === 'tech'
+    ? TECH_MOBILE_MAP_LAYERS
+    : SITE_VARIANT === 'finance'
+      ? FINANCE_MOBILE_MAP_LAYERS
       : SITE_VARIANT === 'commodity'
         ? COMMODITY_MOBILE_MAP_LAYERS
-        : FULL_MOBILE_MAP_LAYERS;
+        : SITE_VARIANT === 'world-plus'
+          ? WORLD_PLUS_MOBILE_MAP_LAYERS
+          : FULL_MOBILE_MAP_LAYERS;
 
 /** Maps map-layer toggle keys to their data-freshness source IDs (single source of truth). */
 export const LAYER_TO_SOURCE: Partial<Record<keyof MapLayers, DataSourceId[]>> = {

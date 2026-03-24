@@ -3,7 +3,7 @@ import type { MapLayers } from '@/types';
 import { isDesktopRuntime } from '@/services/runtime';
 
 export type MapRenderer = 'flat' | 'globe';
-export type MapVariant = 'full' | 'tech' | 'finance' | 'happy' | 'commodity';
+export type MapVariant = 'full' | 'tech' | 'finance' | 'happy' | 'commodity' | 'world-plus';
 
 const _desktop = isDesktopRuntime();
 
@@ -80,6 +80,9 @@ export const LAYER_REGISTRY: Record<keyof MapLayers, LayerDefinition> = {
   commodityPorts:           def('commodityPorts',           '&#9973;',   'commodityPorts',           'Commodity Ports'),
   webcams:                  def('webcams',                  '&#128247;', 'webcams',                  'Live Webcams'),
   weatherRadar:             def('weatherRadar',             '&#127783;', 'weatherRadar',             'Weather Radar', ['flat']),
+  // World-plus variant layers (China Education)
+  chinaEduBrands:           def('chinaEduBrands',           '&#127891;', 'chinaEduBrands',           'China Education Brands', ['flat', 'globe']),
+  chinaLiveStreaming:       def('chinaLiveStreaming',       '&#128250;', 'chinaLiveStreaming',       'Live Streaming Signals', ['flat', 'globe']),
 };
 
 const VARIANT_LAYER_ORDER: Record<MapVariant, Array<keyof MapLayers>> = {
@@ -113,6 +116,19 @@ const VARIANT_LAYER_ORDER: Record<MapVariant, Array<keyof MapLayers>> = {
     'minerals', 'pipelines', 'waterways', 'tradeRoutes',
     'ais', 'economic', 'fires', 'climate',
     'natural', 'weather', 'outages', 'dayNight', 'weatherRadar',
+  ],
+  'world-plus': [
+    // Education layers (new)
+    'chinaEduBrands', 'chinaLiveStreaming',
+    // Full variant base layers
+    'iranAttacks', 'hotspots', 'conflicts',
+    'bases', 'nuclear', 'irradiators', 'radiationWatch', 'spaceports',
+    'cables', 'pipelines', 'datacenters', 'military',
+    'ais', 'tradeRoutes', 'flights', 'protests',
+    'ucdpEvents', 'displacement', 'climate', 'weather',
+    'outages', 'cyberThreats', 'natural', 'fires',
+    'waterways', 'economic', 'minerals', 'gpsJamming',
+    'satellites', 'ciiChoropleth', 'dayNight', 'webcams', 'weatherRadar',
   ],
 };
 
@@ -217,6 +233,24 @@ export const LAYER_SYNONYMS: Record<string, Array<keyof MapLayers>> = {
   webcam: ['webcams'],
   camera: ['webcams'],
   livecam: ['webcams'],
+  // World-plus education synonyms
+  education: ['chinaEduBrands', 'chinaLiveStreaming'],
+  china: ['chinaEduBrands', 'chinaLiveStreaming'],
+  edu: ['chinaEduBrands'],
+  'xdf': ['chinaEduBrands'],
+  'xueersi': ['chinaEduBrands'],
+  'tiger': ['chinaEduBrands'],
+  'yuanfudao': ['chinaEduBrands'],
+  'gaotu': ['chinaEduBrands'],
+  'zuoyebang': ['chinaEduBrands'],
+  'huohua': ['chinaEduBrands'],
+  stream: ['chinaLiveStreaming'],
+  live: ['chinaLiveStreaming'],
+  douyin: ['chinaLiveStreaming'],
+  kuaishou: ['chinaLiveStreaming'],
+  bilibili: ['chinaLiveStreaming'],
+  xiaohongshu: ['chinaLiveStreaming'],
+  wechat: ['chinaLiveStreaming'],
 };
 
 export function resolveLayerLabel(def: LayerDefinition, tFn?: (key: string) => string): string {

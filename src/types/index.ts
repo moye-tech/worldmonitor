@@ -650,6 +650,9 @@ export interface MapLayers {
   commodityPorts: boolean;
   webcams: boolean;
   weatherRadar: boolean;
+  // World-plus variant layers (China Education)
+  chinaEduBrands: boolean;
+  chinaLiveStreaming: boolean;
 }
 
 export interface AIDataCenter {
